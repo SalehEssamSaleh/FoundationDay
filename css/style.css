@@ -1,0 +1,146 @@
+/* 
+Colors
+Navbar : #F3EBD9
+Links : #090500
+Backgroubd : #FEFBF0
+font : Black 
+*/
+@font-face {
+    font-family: harir;
+    src: url(../fonts/harir.otf);
+}
+
+/* 
+Start Global
+
+.container {
+    width: 1200px;
+    margin: auto;
+*/
+
+/* 
+.navbar {
+    background-color: #F3EBD9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px;
+    color: #332F2B;
+    font-size: 1.1rem;
+    font-family: harir;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul a li:hover {
+    color: #6D5347;
+}
+ */
+
+
+/* Start Navbar */
+
+body {
+    font-family: harir;
+}
+
+.bg-body-tertiary {
+    background-color: #F3EBD9 !important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.nav-link {
+    color: #332F2B;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #6D5347;
+}
+
+
+.heroSection {
+    padding-right: 0px;
+    height: max-content;
+}
+
+.col-6::before {
+    content: "";
+    background-image: url(../Images/HeroSectionBackground.webp);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 21%;
+    right: 0px;
+    bottom: 0px;
+    left: 53%;
+    opacity: 0.25;
+}
+
+.col-6 {
+    height: 82.5vh;
+}
+
+
+
+.col-6 img {
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+.col-4 {
+    padding-right: 5%;
+}
+
+h2 {
+    font-size: 7em;
+}
+
+
+p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.quote {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+
+#king {
+    padding: 1% 0;
+    font-size: 1.5em;
+}
+
+button {
+    border-radius: unset !important;
+    background-color: #856B64 !important;
+    border: none !important;
+    font-size: 1.5rem !important;
+    padding: 5px 35px !important;
+    color: white !important;
+}
+
+
+.col-2 {
+    background-image: url(../Images/pattern.webp);
+    padding: 0;
+    opacity: 25%;
+    background-size: 65%;
+    background-repeat: repeat-y;
+    padding: 0;
+}
