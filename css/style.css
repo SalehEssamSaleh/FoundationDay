@@ -50,6 +50,7 @@ ul {
 
 body {
     font-family: harir;
+    overflow: hidden;
 }
 
 .bg-body-tertiary {
@@ -77,14 +78,27 @@ body {
 .col-6::before {
     content: "";
     background-image: url(../Images/HeroSectionBackground.webp);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 21%;
-    right: 0px;
-    bottom: 0px;
-    left: 53%;
+    right: 75px;
+    bottom: 15px;
+    left: 57%;
     opacity: 0.25;
+    animation: circle 25s linear infinite;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+        background-position: 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-position: 0;
+    }
 }
 
 .col-6 {
@@ -135,6 +149,10 @@ button {
     color: white !important;
 }
 
+button:hover {
+
+    box-shadow: 0px 9px 7px #c8c2b4 !important;
+}
 
 .col-2 {
     background-image: url(../Images/pattern.webp);
@@ -143,4 +161,12 @@ button {
     background-size: 65%;
     background-repeat: repeat-y;
     padding: 0;
+    animation: mover 23s infinite;
+}
+
+@keyframes mover {
+
+    100% {
+        background-position: 0 -100%;
+    }
 }
